@@ -8,6 +8,22 @@
   </head>
   <body>
     <div id="app"></div>
+    <main style="max-width:600px;margin:40px auto;padding:24px;background:#fafbfc;border-radius:12px;box-shadow:0 2px 8px #0001;">
+      <h1 style="text-align:center;">나의 자기소개</h1>
+      <section style="margin-bottom:32px;">
+        <h2>소개</h2>
+        <p id="intro-text">여기에 자기소개를 입력하세요.</p>
+        <textarea id="intro-input" rows="3" style="width:100%;margin-top:8px;"></textarea>
+        <button id="save-intro" style="margin-top:8px;">소개 저장</button>
+      </section>
+      <section>
+        <h2>경력</h2>
+        <ul id="career-list" style="padding-left:20px;"></ul>
+        <input id="career-input" type="text" placeholder="경력 입력" style="width:80%;margin-top:8px;" />
+        <button id="add-career" style="margin-top:8px;">경력 추가</button>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
