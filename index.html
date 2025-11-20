@@ -6,21 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>251120-snu_class</title>
   </head>
-  <body>
+  <body style="background:#e3f0ff;">
     <div id="app"></div>
     <main style="max-width:600px;margin:40px auto;padding:24px;background:#fafbfc;border-radius:12px;box-shadow:0 2px 8px #0001;">
-      <h1 style="text-align:center;">나의 자기소개</h1>
-      <section style="margin-bottom:32px;">
-        <h2>소개</h2>
-        <p id="intro-text">여기에 자기소개를 입력하세요.</p>
-        <textarea id="intro-input" rows="3" style="width:100%;margin-top:8px;"></textarea>
-        <button id="save-intro" style="margin-top:8px;">소개 저장</button>
-      </section>
-      <section>
-        <h2>경력</h2>
-        <ul id="career-list" style="padding-left:20px;"></ul>
-        <input id="career-input" type="text" placeholder="경력 입력" style="width:80%;margin-top:8px;" />
-        <button id="add-career" style="margin-top:8px;">경력 추가</button>
+      <h1 style="text-align:center;">자유롭게 질문해주세요 :) </h1>
+      <section id="chatbot-section" style="margin-top:48px;padding:24px 0 0 0;border-top:1px solid #eee;">
+        <h2 style="text-align:center;">과학 질문 챗봇</h2>
+        <form id="chatbot-form" style="display:flex;flex-direction:column;align-items:center;gap:12px;max-width:400px;margin:0 auto;">
+          <input id="chatbot-name" type="text" placeholder="이름을 입력하세요" style="width:100%;padding:10px;border-radius:6px;border:1px solid #ccc;font-size:1rem;" required />
+          <textarea id="chatbot-question" rows="2" placeholder="과학 질문을 입력하세요" style="width:100%;padding:10px;border-radius:6px;border:1px solid #ccc;font-size:1rem;resize:vertical;" required></textarea>
+          <button type="submit" style="background:#4f8cff;color:white;padding:10px 24px;border:none;border-radius:6px;font-size:1rem;cursor:pointer;">질문하기</button>
+        </form>
+        <div id="chatbot-answer-box" style="margin-top:24px;min-height:48px;background:#f4f8ff;border-radius:8px;padding:16px 20px;color:#222;font-size:1.1rem;box-shadow:0 1px 4px #0001;display:none;"></div>
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
